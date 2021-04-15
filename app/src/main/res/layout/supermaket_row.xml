@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView70"
+        android:layout_width="394dp"
+        android:layout_height="173dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        tools:srcCompat="@drawable/imageicon"
+        android:alpha="0.8"/>
+
+    <ImageView
+        android:id="@+id/imageView300"
+        android:layout_width="60dp"
+        android:layout_height="46dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView70"
+        app:layout_constraintVertical_bias="0.921"
+        tools:srcCompat="@drawable/imageicon" />
+
+    <View
+        android:id="@+id/view70"
+        android:layout_width="395dp"
+        android:layout_height="86dp"
+        android:background="#121e2b"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <ImageView
+        android:id="@+id/imageView71"
+        android:layout_width="19dp"
+        android:layout_height="26dp"
+        android:background="#FBA916"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70"
+        app:layout_constraintVertical_bias="0.492"
+        app:srcCompat="@drawable/market" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Σλαβενίτης"
+        android:textColor="#FBA916"
+        android:textSize="18sp"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/view70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70"
+        app:layout_constraintVertical_bias="0.507" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

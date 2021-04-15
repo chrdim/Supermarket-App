@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChooseLanguageActivity">
+
+    <View
+        android:id="@+id/view44545"
+        android:layout_width="572dp"
+        android:layout_height="285dp"
+        android:background="@drawable/roundshape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView743534"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Επιλέξτε γλώσσα\n\nChoose language"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <ImageView
+        android:id="@+id/imageView45346"
+        android:layout_width="68dp"
+        android:layout_height="48dp"
+        android:onClick="setGreekLanguage"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view44545"
+        app:layout_constraintVertical_bias="0.22"
+        app:srcCompat="@drawable/greeceflag"
+        tools:srcCompat="@drawable/greeceflag" />
+
+    <ImageView
+        android:id="@+id/imageView35353"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:background="#FBA916"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view44545"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView743534"
+        app:srcCompat="@drawable/languageicon"
+        tools:srcCompat="@drawable/languageicon" />
+
+    <ImageView
+        android:id="@+id/imageView35353434323"
+        android:layout_width="31dp"
+        android:layout_height="34dp"
+        android:background="#FBA916"
+
+        android:onClick="microphoneClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"
+        app:srcCompat="@drawable/microphone"
+        tools:srcCompat="@drawable/microphone" />
+
+    <ImageView
+        android:id="@+id/imageView54757"
+        android:layout_width="69dp"
+        android:layout_height="57dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view44545"
+        app:layout_constraintVertical_bias="0.694"
+        app:srcCompat="@drawable/ukflag"
+        tools:srcCompat="@drawable/ukflag"
+        android:onClick="setEnglishLanguage"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

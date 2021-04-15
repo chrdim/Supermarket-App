@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectAddressAcitvity">
+
+    <View
+        android:id="@+id/view70"
+        android:layout_width="572dp"
+        android:layout_height="285dp"
+        android:background="@drawable/roundshape"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonOrder"
+        android:layout_width="331dp"
+        android:layout_height="43dp"
+        android:onClick="goToNextActivity"
+        android:text="Παράγγειλε τώρα"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <ImageView
+        android:id="@+id/imageView500"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:background="#FBA916"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1777"
+        app:layout_constraintVertical_bias="0.74"
+        app:srcCompat="@drawable/deliveryicon" />
+
+    <TextView
+        android:id="@+id/textView1777"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Διεύθυνση παράδοσης
+"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <ScrollView
+        android:id="@+id/scrollView6"
+        android:layout_width="387dp"
+        android:layout_height="103dp"
+        android:layout_marginBottom="52dp"
+        android:background="@color/white"
+        android:isScrollContainer="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrder"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView17777"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addAddress"
+        android:text="Προσθήκη νέας διεύθυνσης "
+        android:textColor="	#228B22"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <ImageView
+        android:id="@+id/imageView505"
+        android:layout_width="17dp"
+        android:layout_height="19dp"
+
+
+        android:layout_marginBottom="16dp"
+        android:onClick="addAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView6"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/addicon" />
+
+    <Button
+        android:id="@+id/button189"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+        android:layout_width="326dp"
+        android:layout_height="70dp"
+        android:background="@color/white"
+        android:drawableRight="@drawable/arrowdown"
+        android:onClick="selectAddress"
+        android:text="Διεύθυνση παράδοσης"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
